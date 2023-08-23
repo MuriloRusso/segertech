@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Assinatura</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+		body {
+			margin: 0;
+			padding: 8px 16px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.retangulo {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			width: 100%;
+			border: 1px solid #bebebe;
+			border-radius: 4px;
+			margin-bottom: 8px;
+			padding: 8px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		form {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		input,
+		button {
+			width: 300px;
+			margin-top: 8px;
+			padding: 4px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			border-radius: 4px;
+			border: 1px solid #bebebe;
+		}
+
+		input:first-child {
+			margin-top: 0;
+		}
+
+		button {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="retangulo">
+		<input type="text" placeholder="Nome e Sobrenome" id="inome">
+		<input type="text" placeholder="Cargo" id="imail">
+		<input type="cel" placeholder="Celular" class="mask-brphones" id="icel">
+		<!-- <input type="text" placeholder="Site" id="icargo"> -->
+		<!-- <input type="cel" disabled value="(11) 4223-1710">
+		<input type="cel" disabled value="(11) 4224-6500"> -->
+		
+		<button id="gerar" onclick="gerarFunction()">Gerar</button>
+	</div>
+	<div class="retangulo">
+		<div id="copycodfont">
+			<table id="table" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td style="padding-right: 8px;" valign="bottom">
+									<a href="https://www.rbsteel.com.br/" target="_blank">
+										<img src="img/RB_assinatura.png" alt="RB_assinatura" width="250" height="165">
+									</a>
+								</td>
+								<td style="padding-left: 1px; line-height: 1; ">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td id="nome"
+												style="padding-top: 2px; color: #602B85;font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 17px;">
+												NOME E SOBRENOME
+											</td>
+										</tr>
+										<tr>
+														
+										<td style="color: #051B38;font-size: 16px;font-family: 'Montserrat', sans-serif; font-weight: 600;" id="mail">
+											CARGO
+									
+										</td>
+
+										</tr>
+										<tr>
+											<td style="padding-top: 10px;">
+												<table border="0" cellpadding="0" cellspacing="0">
+													<tr>
+														<td style="padding-right: 8px;">
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tr>
+																	<td style="color: #602B85;font-family: 'Montserrat', sans-serif; font-weight: 700;font-size: 15px;">
+																		FONE:
+																		<a href="tel:+55(11)2272-0016"
+																			style="color: #051B38;font-family: 'Montserrat', sans-serif; font-weight: 600;font-size: 15px;">
+																			+55 11 2272-0016
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-top: 2px;">
+												<table border="0" cellpadding="0" cellspacing="0">
+													<tr>
+														
+														<td style="color: #602B85;font-family: 'Montserrat', sans-serif; font-weight: 700;font-size: 15px;">
+															CELULAR:
+															<a href="#" id="cel"
+																style="color: #051B38; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 15px;">
+																+55 11 99999-9999
+															</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="color: #602B85;font-size: 16px;font-family: 'Montserrat', sans-serif; font-weight: 700;">
+												SITE:
+												<a href="https://rbsteel.com.br/"
+													style="color: #051B38; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 15px;"
+													>
+													www.rbsteel.com.br
+												</a>
+											</td>
+										</tr>
+																		
+										<tr>
+											<td style="padding-top: 10px;">
+												<table border="0" cellpadding="0" cellspacing="0" >
+													<tr>
+														<td
+															style="color: #051B38; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px;">
+															Rua Cap. Pacheco Chaves 1052, sala 82, Vila Prudente,<br> São Paulo - SP, 03126-001 - Brasil
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+
+				</tr>
+				
+			</table>
+		</div>
+		<button onclick="copyFunction()">Copiar</button>
+		<button onclick="copyToClip(document.getElementById('copycodfont').innerHTML)">Copiar Código Fonte</button>
+	</div>
+	<script src="js/jquerycustom.js"></script>
+	<script>
+		// base url
+		const baseurl = () => {
+			return window.location.href
+				.split('/')
+				.slice(0, -1)
+				.join('/');
+		}
+		const source = (base, element) => {
+			return `${base}/${$(element).attr('src')}`;
+		}
+		$(document).ready(function () {
+			$.each($('img'), function (index, element) {
+				$(element).attr('src', source(baseurl(), element));
+			});
+		});
+
+		//functions
+		$.fn.tel = function () {
+			$.each($(this), (index, element) => {
+				$(element).attr("href", 'tel:+55' + $(element).text().replace(/\s/g, ''));
+			});
+		};
+		$.fn.mailto = function () {
+			$.each($(this), (index, element) => {
+				$(element).attr("href", 'mailto:' + $(element).text().replace(/\s/g, ''));
+			});
+		};
+		// generate signature
+		function gerarFunction() {
+			$('#nome').text($('#inome').val());
+			$('#cargo').text($('#icargo').val());
+			$('#cel').text($('#icel').val());
+			$('#cel').tel();
+			$('#mail').text($('#imail').val());
+			$('#mail').mailto();
+		}
+
+		//copy signature
+		function copyFunction(el = document.getElementById("table")) {
+			var body = document.body, range, sel;
+			if (document.createRange && window.getSelection) {
+				range = document.createRange();
+				sel = window.getSelection();
+				sel.removeAllRanges();
+				try {
+					range.selectNodeContents(el);
+					sel.addRange(range);
+				} catch (e) {
+					range.selectNode(el);
+					sel.addRange(range);
+				}
+			}
+			else if (body.createTextRange) {
+				range = body.createTextRange();
+				range.moveToElementText(el);
+				range.select();
+			}
+			document.execCommand('Copy');
+			alert("Assinatura copiada!");
+		}
+
+		// copy cod font signature
+		function copyToClip(str) {
+			function listener(e) {
+				e.clipboardData.setData("text/html", str);
+				e.clipboardData.setData("text/plain", str);
+				e.preventDefault();
+			}
+			document.addEventListener("copy", listener);
+			document.execCommand("copy");
+			document.removeEventListener("copy", listener);
+			alert("Código fonte da assinatura copiado!");
+		};
+	</script>
+</body>
+
+</html>
